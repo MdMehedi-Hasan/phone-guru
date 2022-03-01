@@ -1,0 +1,9 @@
+.footer{
+    padding: 60px 0px;
+    position: relative;
+    bottom: -227px;
+    background-color: rgb(70, 70, 70);
+}
+.footer h5{
+    color:#c9c9c9;
+}
