@@ -10,6 +10,7 @@ document.getElementById('button-addon2').addEventListener('click',() =>{
 const display = (products) =>{
     // console.log(products)
     const parent = document.getElementById('result-section');
+    parent.textContent='';
     const data = products.data;
     for(const product of data){
         // console.log(product,data)
