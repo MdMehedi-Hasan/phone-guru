@@ -9,15 +9,21 @@
     <link rel="shortcut icon" href="images/mobile-solid.svg" type="image/x-icon">
     <!-- Bootstrap linked -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <!-- Font-awesome linked-->
-    <script src="https://kit.fontawesome.com/276cfc4c2d.js" crossorigin="anonymous"></script>
     <!-- Custome CSS File linked -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <!-- Header section -->
     <header>
-        <h1 class="text-center text-warning">Search, Compare & Select the perfect phone of your desire with <br> <span class="text-success">Phone Guru</span></h1>
+        <nav class="navbar navbar-light custom">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="images/mobile-solid.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                <span style="color: rgb(0, 163, 35); font-weight: 700; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Phone Guru</span>
+              </a>
+            </div>
+          </nav>
+    <!-- Search products field -->
         <div class="input-group mb-3 mt-5 w-50 m-auto">
             <input type="text" class="form-control" placeholder="Search with phone name" aria-label="Recipient's username" aria-describedby="button-addon2" id="input">
             <button class="btn btn-outline-primary" type="button" id="button-addon2">Search</button>
@@ -29,6 +35,7 @@
             <div id="parent2" class="container">
             </div>
         </section>
+        <!--Search Validation section -->
         <section>
             <div class="container mt-5">
                 <div id="validation">
