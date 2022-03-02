@@ -14,14 +14,4 @@
     text-decoration: none;
     color: rgb(110, 110, 110);
 }
-.footer{
-    padding: 60px 0px;
-    position: absolute;
-    width: 100%;
-    bottom: 0px;
-    background-color: rgb(70, 70, 70);
-}
-.footer h5{
-    color:#c9c9c9;
-}
 /* ================================================= */
