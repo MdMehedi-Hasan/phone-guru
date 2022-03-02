@@ -1,3 +1,16 @@
+#validation{
+    display: none;
+    text-align: center;
+    margin-top: 100px;
+    font-weight: 900;
+    font-size: 22px;
+
+}
+#validation a{
+    font-size: small;
+    text-decoration: none;
+    color: rgb(110, 110, 110);
+}
 .footer{
     padding: 60px 0px;
     position: relative;

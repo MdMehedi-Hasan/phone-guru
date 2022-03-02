@@ -31,8 +31,17 @@ const display = (products) =>{
     `
     parent.appendChild(div);
     }
+    const length = products.data.length
+    if(length == 0){
+        const validation = document.getElementById('validation');
+        validation.classList.add('d-block')
+    }
+    else{
+        const validation = document.getElementById('validation');
+        validation.classList.add('d-none')
+    }
+    console.log(products.data.length)
 }
-// clean above no need to touch
 
 const details = infoId =>{
     const detailsUrl =`https://openapi.programming-hero.com/api/phone/${infoId}`
