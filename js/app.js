@@ -9,11 +9,14 @@ document.getElementById('button-addon2').addEventListener('click',() =>{
 })
 const display = (products) =>{
     // console.log(products)
+    const parent2 = document.getElementById('parent2')
+    parent2.textContent='';
     const parent = document.getElementById('result-section');
     parent.textContent='';
     const data = products.data;
+    // console.log(products.data.length)
     for(const product of data){
-        console.log(product)
+        // console.log(product)
         const div = document.createElement('div');
         div.classList.add('col');
         div.classList.add('rounded');
@@ -45,8 +48,8 @@ const detailsCard = sec => {
     div.classList.add('card')
     div.classList.add('g-0')
     div.innerHTML=`
-    <div  class="row g-0">
-    <div class="col-md-4">
+    <div  class="row g-0 py-4">
+    <div class="col-md-4 d-flex justify-content-center">
     <img src="${sec.data.image}" class="img-fluid rounded-start" alt="...">
         </div>
         <div class="col-md-8">
@@ -54,7 +57,7 @@ const detailsCard = sec => {
             <h5 class="card-title">${sec.data.brand} ${sec.data.name}</h5>
             <h6 class="card-text">Main Features:-</h6>
             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <p class="card-text"><small class="text-muted">${sec.data.releaseDate}</small></p>
         </div>
         </div>
     </div>`
